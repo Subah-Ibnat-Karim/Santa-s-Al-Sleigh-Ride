@@ -1,0 +1,11 @@
+10	7
+x	2	2	2	2   2	1p
+x	1	x	x	x   1b	2
+x	1	2	1	2   1r	2
+x	1b	x	1	x   1	1
+x	2p	7	5	1   1	x
+x	x	x	7	1	1	x
+x	1	1	1	1	1	x
+x	1	x	1	1	1	x
+x	7	x	5	x	2	x
+x	x	x	x	x	x	x
