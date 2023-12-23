@@ -4,8 +4,9 @@ class Consts:
     # Map
     MAP_FILE = 'maps/map7.txt'
     MAP_PATH = './maps/map'
-    Num= input("The options for the size of the area of the neighbourhood to distribute gifts:\n0) 5x7 map_size\n1) 5x5 map_size\n2) 6x6 map_size\n3) 7x7 map_size\n4) 8x8 map_size\n5) 9x9 map_size\n6) 10x10 map_size\n7) 10x7 map_size\n Choose one of the following option (0-7) to choose the area of the neighbourhood to run the Santa's Al Sleigh Ride:\n")
-    MAP_FILE='./maps/map'+Num+'.txt'
+    # Num= input("The options for the size of the area of the neighbourhood to distribute gifts:\n0) 5x7 map_size\n1) 5x5 map_size\n2) 6x6 map_size\n3) 7x7 map_size\n4) 8x8 map_size\n5) 9x9 map_size\n6) 10x10 map_size\n7) 10x7 map_size\n Choose one of the following option (0-7) to choose the area of the neighbourhood to run the Santa's Al Sleigh Ride:\n")
+    # Num = PygameInputManager.get_selected_number()
+    MAP_FILE='./maps/map0.txt'
     # IDS
     FIRST_K = 1
     LAST_K = 50

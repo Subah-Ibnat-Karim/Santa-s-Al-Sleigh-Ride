@@ -16,8 +16,8 @@ class GameManager:
     init_state: State
     display: Display
 
-    def __init__(self):
-        self.map, self.init_state = self.parse_map()
+    def __init__(self, Num):
+        self.map, self.init_state = self.parse_map(Num)
         # After parsing map it's time to start pygame
         self.display = Display(self.map)
 
@@ -280,11 +280,11 @@ class GameManager:
                 heap.add(child)
 
     @staticmethod
-    def parse_map() -> (Map, State):
+    def parse_map(Num) -> (Map, State):
         """ Uses map file to create map object in game.
             :returns The map object and the init state"""
         # gridSize = input("Enter the size of grid (1 to 6 and 10) : ")
-        map_array = FileIO.read_line_by_line(Consts.MAP_FILE)
+        map_array = FileIO.read_line_by_line('./maps/map'+str(Num)+'.txt')
         sizes = map_array.pop(0)
         h, w = int(sizes[0]), int(sizes[1])
         map_object = Map(h, w)
