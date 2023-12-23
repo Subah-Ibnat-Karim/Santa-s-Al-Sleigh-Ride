@@ -1,6 +1,7 @@
 import screen_manager
 from game_manager import GameManager
 import sys
+from PyGameInputHandler import PygameInputManager
 
 def __main__():
     arg = sys.argv
@@ -12,10 +13,11 @@ def __main__():
         else:
             print('\n\nUse "a_star" or "bd_bfs" or "ucs" or "ids" as argument.')
             return
+    Num = PygameInputManager.get_selected_number()
     for z in ['a_star', 'bd_bfs', 'ucs','ids']:
         print(z+" :")
         search_type = z
-        game_manager = GameManager()
+        game_manager = GameManager(Num)
         # Finding way
         result, depth, cost = game_manager.start_search(search_type)
 
