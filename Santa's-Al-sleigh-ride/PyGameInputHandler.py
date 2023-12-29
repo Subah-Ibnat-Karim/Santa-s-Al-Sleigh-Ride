@@ -10,7 +10,7 @@ class PygameInputHandler:
         pygame.init()
         self.screen_size = (600, 125)
         self.screen = pygame.display.set_mode(self.screen_size, pygame.RESIZABLE)
-        pygame.display.set_caption("Grid Example")
+        pygame.display.set_caption("Santa's AI Sleigh ride")
         self.clock = pygame.time.Clock()
 
 
